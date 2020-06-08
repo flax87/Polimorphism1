@@ -58,16 +58,31 @@ public class Rectungle implements IGeometry, IPackaging {
 
     @Override
     public String toJSON() {
-        return null;
+        String json = "Rectangle{"
+                + "\""  + "length\":" + this.getLength()
+                + ","
+                + "\""  + "width\":" + this.getWidth()
+                + "}";
+        return json;
     }
 
     @Override
     public String toXML() {
-        return null;
+        String xml = "<Rectangle>"
+                + "<length>" + this.getLength() + "</length>"
+                + "<width>" + this.getWidth() + "</width>"
+                +  "</Rectangle>";
+
+        return xml;
     }
 
     @Override
     public void toConsole() {
+        
+
+
+
 
     }
+
 }
